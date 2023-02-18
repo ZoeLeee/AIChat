@@ -1,12 +1,13 @@
 <!--index.wxml-->
 <view class="container">
   <view class="content">
-    <my-message isSend="{{true}}"></my-message>
-    <my-message isSend="{{false}}"></my-message>
+  <block wx:for="{{data}}" wx:key="id">
+    <my-message  isSend="{{item.type===0}}" content="{{item.msg}}"></my-message>
+  </block>
   </view>
   <view class="input-area">
-    <input placeholder="请输入您的问题" />
-    <button type="primary">
+    <input placeholder="请输入您的问题" model:value="{{msg}}" />
+    <button type="primary" bindtap="sendMessage">
       <mp-icon icon="arrow" color="white" size="{{20}}"></mp-icon>
     </button>
   </view>
