@@ -1,0 +1,28 @@
+/* components/message.wxss */
+
+.content{
+  width: 100%;
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.left{
+  justify-content: flex-start;
+}
+.right{
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.content view{
+  width: 60%;
+  padding: 10rpx;
+}
+
+.left view{
+  background-color: #fff;
+}
+
+.right view{
+  background-color:rgb(21, 132, 196);
+}

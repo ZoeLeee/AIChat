@@ -1,0 +1,24 @@
+/**index.wxss**/
+.content{
+  flex: auto;
+  overflow: auto;
+}
+
+.input-area{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+}
+
+.input-area input{
+  flex:1;
+  height: 100%;
+}
+.input-area button{
+  height: 100%;
+  width: 100rpx;
+  line-height: 100rpx;
+  padding: 0;
+}

@@ -1,0 +1,4 @@
+<!--components/message.wxml-->
+<view class="content {{isSend?'right':'left'}}">
+  <view>消息的内容</view>
+</view>
