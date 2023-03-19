@@ -4,9 +4,10 @@
   <block wx:for="{{data}}" wx:key="id">
     <my-message  isSend="{{item.type===0}}" content="{{item.msg}}"></my-message>
   </block>
+  <my-message wx:if="{{loading}}"  isSend="{{false}}" content="正在接收数据。。。"></my-message>
   </view>
   <view class="input-area">
-    <input placeholder="请输入您的问题" model:value="{{msg}}" />
+    <input placeholder="请输入您的问题" model:value="{{msg}}" disabled="{{loading}}" bindconfirm="sendMessage" />
     <button type="primary" bindtap="sendMessage">
       <mp-icon icon="arrow" color="white" size="{{20}}"></mp-icon>
     </button>
